@@ -1,0 +1,30 @@
+{
+  "name": "collatz-visualizer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "11.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "recharts": "^2.0.10"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.1.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^26.0.24",
+    "@types/react": "17.0.15",
+    "babel-jest": "^27.0.6",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.0.1",
+    "jest": "^27.0.6",
+    "typescript": "4.3.5"
+  }
+}
