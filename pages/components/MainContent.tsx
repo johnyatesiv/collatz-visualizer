@@ -4,7 +4,7 @@ import Image from "next/image";
 import collatzHeadShotImage from "../../public/lothar_collatz.jpeg";
 import collatzFunctionImage from "../../public/collatz_func.svg";
 
-export function MainContent(
+export default function MainContent(
     props: {
         generatedValues: [number, number][],
         maxValue: number,
@@ -62,7 +62,7 @@ function QuickStatsContent(
             <div className={styles.table}>
                 <div className={styles.tableRow}>
                     <div className={styles.tableCell}>Total steps to converge</div>
-                    <td className={styles.tableCell}>{props.generatedValues.length}</td>
+                    <td className={styles.tableCell}>{props?.generatedValues?.length}</td>
                 </div>
                 <div className={styles.tableRow}>
                     <div className={styles.tableCell}>Maximum value in sequence</div>

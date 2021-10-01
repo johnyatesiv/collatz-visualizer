@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import CollatzVisualizer from "./components/CollatzVisualizer";
 import Footer from "./components/Footer";
 import { CollatzAlgorithm } from "../api/algo";
-import {MainContent} from "./components/MainContent";
+import MainContent from "./components/MainContent";
 import Header from "./components/Header";
 
 export default function Home() {
