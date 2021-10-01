@@ -1,5 +1,6 @@
 import React from "react";
 import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
+import styles from "../../styles/Home.module.css";
 
 export default function CollatzVisualizer(props: { generatedValues: [number, number][] }) {
     const generatedValues = props.generatedValues || [];
@@ -11,11 +12,13 @@ export default function CollatzVisualizer(props: { generatedValues: [number, num
     });
 
     return (
-        <LineChart width={600} height={300} margin={{ top: 5, left: 5, right: 5, bottom: 5 }} data={mappedValues}>
-            <Line type="monotone" dataKey="value" stroke="#8884d8" />
-            <CartesianGrid stroke="#ccc" />
-            <XAxis dataKey="index" />
-            <YAxis />
-        </LineChart>
+        <div className={styles.visualizerContainer}>
+            <LineChart width={600} height={300} margin={{ top: 5, left: 5, right: 5, bottom: 5 }} data={mappedValues}>
+                <Line type="monotone" dataKey="value" stroke="#8884d8" />
+                <CartesianGrid stroke="#ccc" />
+                <XAxis dataKey="index" />
+                <YAxis />
+            </LineChart>
+        </div>
     );
 }
